@@ -1416,7 +1416,7 @@ async function handleApi(request, env) {
       await logFailure(request, env, session, "logs.access", "DENIED", {
         context: { method: request.method, reason: "read_only_endpoint" }
       });
-      return error("Los logs son de solo lectura.", 405);
+      return error("Operación no permitida sobre logs. No se pueden eliminar evidencias.", 405);
     }
     if (session.role !== "ADMIN" && session.role !== "AUDITOR") {
       await logFailure(request, env, session, "logs.access", "DENIED", { context: { reason: "role_not_allowed" } });
@@ -1445,7 +1445,7 @@ async function handleApi(request, env) {
       await logFailure(request, env, session, "metalog.access", "DENIED", {
         context: { method: request.method, resource: pathname, reason: "read_only_endpoint" }
       });
-      return error("Los metalogs son de solo lectura.", 405);
+      return error("Operación no permitida sobre metalogs. No se pueden eliminar evidencias.", 405);
     }
     return listMetalogs(request, env, session);
   }

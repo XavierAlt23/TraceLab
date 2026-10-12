@@ -115,6 +115,9 @@ export function App() {
   }, [clearSessionState]);
 
   useEffect(() => { void refresh(); }, [refresh]);
+  useEffect(() => {
+    if (selectedEvidence) document.getElementById("evidence-editor")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [selectedEvidence]);
 
   useEffect(() => {
     if (!user || user.role === "USER") return;

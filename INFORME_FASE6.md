@@ -1,5 +1,19 @@
 # TRACELAB — FASE 6
 
+## Ajuste posterior autorizado: panel y demo local limpia
+
+El usuario autorizó después de este informe borrar todos los datos locales y trabajar sobre la base principal, sin D1 aislada. Esta excepción sustituye la preservación del historial anterior para el reinicio local; no autoriza borrar evidencias después del despliegue.
+
+- Panel nuevo: títulos legibles, nombre, rol, fecha/hora UTC e IP; MAC indicada como no disponible. Único filtro desplegable por título de evento, obtenido de acciones reales; más recientes primero.
+- Visualizaciones de registros registradas para USER, ADMIN y AUDITOR.
+- Excepción educativa de edición: ADMIN/AUDITOR editan logs; solo AUDITOR edita metalogs. Cada cambio genera `EVIDENCE_CONTENT_EDITED` atómico, con antes/después; conserva firma/hash originales y la alteración es detectable. No existen rutas para eliminar evidencias.
+- Reinicio local autorizado realizado, incluidos datos temporales de la comprobación. Resultado final: **0 estudiantes, 0 sesiones, 0 logs, 0 metalogs y 10 espacios compartidos vacíos**. La incidencia 298 pertenece a la base retirada, no fue reparada ni re-firmada.
+- PASS: typecheck, lint, build, 20 pruebas unitarias y comprobación real en la base principal (visualizar/editar registros, orden, desplegables, permisos, edición auditada de logs/metalogs, firma conservada, detección de alteración y tildes).
+- NOT_RUN: navegador real. No se ejecutaron volumen ni nuevas pruebas D1 aisladas en este ajuste. Los resultados inferiores corresponden al cierre original, antes de esta nueva instrucción.
+- Archivos del ajuste: `src/client/AuditHistory.tsx`, `EvidenceEditor.tsx`, `history.css`, `App.tsx`; `src/worker/index.ts`; `migrations/0009_educational_evidence_edits.sql`; `scripts/initialize-local-demo.mjs`, `check-local-demo.mjs`; `tests/worker-failure.test.mjs`; `wrangler.jsonc`, `package.json`, `README.md` y documentación de estado.
+
+Inicio actual: `npm run build` y `npm start`; abrir `http://127.0.0.1:8795`. Claves locales estables en `.dev.vars`, sin mostrar sus valores. Fase 7 no iniciada.
+
 **Estado: COMPLETADA localmente.** Alcance: demo universitaria de diez minutos, unos diez participantes y diez registros compartidos. Revisión visual pendiente. Fase 7 no iniciada.
 
 ## Metodología

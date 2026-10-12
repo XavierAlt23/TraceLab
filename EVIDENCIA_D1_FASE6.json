@@ -77,5 +77,18 @@
       "archivo": "state/v3/d1/miniflare-D1DatabaseObject/metadata.sqlite-wal",
       "sha256": "1CAD86890B13D5042512CBEA8E7C2E270F913A254234510306609EEFC9807A30"
     }
-  ]
+  ],
+  "periodo": "Cierre original de Fase 6, anterior al reinicio posterior autorizado",
+  "reinicio_posterior": {
+    "autorizacion": "Usuario: borrar todos los datos locales, usar base principal, no borrar evidencias después del despliegue",
+    "realizado": true,
+    "estado_final": {
+      "estudiantes": 0,
+      "sesiones": 0,
+      "logs": 0,
+      "metalogs": 0,
+      "registros_compartidos_vacios": 10
+    },
+    "nota": "Los hashes originales archivados no corresponden a la nueva base principal."
+  }
 }
