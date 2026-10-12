@@ -1,0 +1,3 @@
+ADMIN_ACCESS_CODE=configure-a-long-random-secret-locally
+AUDITOR_ACCESS_CODE=configure-a-different-long-random-secret-locally
+AUDIT_HMAC_KEY=configure-a-random-secret-of-at-least-32-characters

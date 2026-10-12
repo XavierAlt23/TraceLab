@@ -1,0 +1,38 @@
+.integrity-panel{margin-top:24px;padding:24px;border:1px solid #527b8d88;border-radius:10px;background:linear-gradient(145deg,#152835,#111827)}
+.integrity-panel h2,.lab-box h3{font:600 19px "Segoe UI",sans-serif;margin:7px 0 0}
+.chain-diagram{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px;padding:18px;border:1px solid #ffffff18;border-radius:8px;background:#0b1522;color:#cfe2ef;font:11px var(--mono)}
+.chain-diagram b{color:#73d4b0}.worm-note{margin:18px 0;padding:12px;border-left:3px solid #d3ae62;background:#2a261c;color:#edd79e;font-size:12px}
+.integrity-result,.lab-box{margin-top:18px;padding:16px;border:1px solid #ffffff1b;border-radius:8px;background:#0d1827}.integrity-status{display:inline-block;margin-bottom:7px;font:600 13px var(--mono)}
+.integrity-ok{color:#72d2ae}.integrity-failed{color:#ff9a9a}.integrity-unverifiable{color:#eac47b}.integrity-result ul{max-height:180px;overflow:auto;color:#f0b1a9;font:11px var(--mono)}
+.lab-box{background:#111827}.lab-controls{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin:14px 0}.lab-controls label{display:grid;flex:1 1 280px;gap:7px;color:#c7d2e1;font-size:12px}.lab-controls select{padding:10px;border:1px solid #34445a;border-radius:6px;background:#0d1726;color:#eef3f9}.lab-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.lab-columns>div{min-width:0}.lab-columns h4{margin:12px 0 6px}.lab-columns pre{max-height:280px;overflow:auto;padding:12px;border:1px solid #ffffff18;border-radius:6px;background:#090f18;color:#bdcedd;font:10px var(--mono);white-space:pre-wrap;overflow-wrap:anywhere}.lab-status{color:#72d2ae;font-size:12px}
+@media(max-width:650px){.integrity-panel{padding:17px}.integrity-panel>.form-topline{align-items:flex-start;flex-direction:column;gap:14px}.lab-columns{grid-template-columns:1fr}.chain-diagram{justify-content:flex-start}}
+/* Fase 6: foco visible, lectura móvil y mensajes de estado. */
+:focus-visible { outline: 2px solid #8ed6e2; outline-offset: 4px; }
+.success-message { color: #a2e4c3; padding: 12px; border: 1px solid #72d2ae55; border-radius: 6px; }
+.records-list { margin-top: 16px; }
+.event-details { margin-top: 12px; font-size: 12px; color: #c7d2e1; }
+.event-details pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+.log-list + button { margin-top: 16px; }
+.integrity-result, .workspace-heading, .record-body { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 540px) {
+  .logs-panel > .form-topline { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .log-filters { grid-template-columns: 1fr; }
+  .form-topline, .lab-controls { flex-wrap: wrap; gap: 12px; }
+  .record-title-row { align-items: flex-start; gap: 12px; }
+  .record-form { padding: 18px; }
+}
+.shared-records { margin-top: 24px; }
+.shared-records h2 { font-size: 20px; }
+.shared-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 13px; }
+.shared-table caption { text-align: left; color: #b1bed0; padding-bottom: 14px; }
+.shared-table th, .shared-table td { text-align: left; padding: 14px 10px; border-bottom: 1px solid #34445a; overflow-wrap: anywhere; }
+.shared-table th { color: #8ed6e2; }
+.shared-table td { white-space: pre-wrap; vertical-align: top; }
+.shared-table small { display: block; margin-top: 8px; color: #b1bed0; }
+@media (max-width: 650px) {
+  .shared-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .shared-table tr { display: block; margin: 14px 0; padding: 8px; border: 1px solid #34445a; border-radius: 8px; }
+  .shared-table td { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px; }
+  .shared-table td::before { content: attr(data-label); color: #8ed6e2; font-weight: 600; }
+  .shared-table small { grid-column: 2; }
+}

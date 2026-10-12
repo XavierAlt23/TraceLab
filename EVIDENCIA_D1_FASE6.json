@@ -1,0 +1,81 @@
+{
+  "fecha": "2026-10-12",
+  "scope": ".wrangler/state/v3/d1",
+  "metodo": "SHA-256 de cada archivo, comparación antes y después de Fase 6, sin abrir D1 con Wrangler",
+  "resultado": {
+    "preserved": true,
+    "count": 17,
+    "changes": [],
+    "missing": []
+  },
+  "archivos": [
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/2a5d3dc92cc855617b4f956dcbbea48a38c1c339f7f6376a58f3e99112e5e0f7.sqlite",
+      "sha256": "9960CCD482F516772DCABF1BE2683B2E5A0B4AAD678E8E0200FEE87C44F660E8"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/2a5d3dc92cc855617b4f956dcbbea48a38c1c339f7f6376a58f3e99112e5e0f7.sqlite-shm",
+      "sha256": "71BBA6B1071C103782149802D55B84AFAC2F60AA78362E7E42EDDEC438FA0376"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/2a5d3dc92cc855617b4f956dcbbea48a38c1c339f7f6376a58f3e99112e5e0f7.sqlite-wal",
+      "sha256": "FEF252FF69EA762BD276C0C00942D24CA6D36A5764342480C575ABFAFEDBA530"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/7374fef25ccac9ec6b58abb7cb382bb3da92c78f756d4d4484cde648ac3d59cf.sqlite",
+      "sha256": "CBDA4B8189A95B208615CE3E84A99A4C08A6F124FF40C5EE6D67C2C15266B0F1"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/7374fef25ccac9ec6b58abb7cb382bb3da92c78f756d4d4484cde648ac3d59cf.sqlite-shm",
+      "sha256": "7C571E93E969F08F589AABC2B4B979D1993955BC0BDE84212A5EEA5B056ACF00"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/7374fef25ccac9ec6b58abb7cb382bb3da92c78f756d4d4484cde648ac3d59cf.sqlite-wal",
+      "sha256": "4A303E2735CE3A5B04A40E4C84A05E16C13AC6C39DC226E665F6E326C216DD88"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/871b98449c192324d329896002409f270f0074c49e014ed6071fb03bf384b7f4.sqlite",
+      "sha256": "90BC0FB40BDBABDCA8F7D4702ACF598632239745160F50D17E0F4CF2FE1F493A"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/a24d7697c504036bf700fea0b8b89b3bfc41968514593511ea077a98fc9a49f1.sqlite",
+      "sha256": "306FEDAF7852EC43808D498A49A3CD567FFBE4BCC0DB778B52E97978027FD9B2"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/a24d7697c504036bf700fea0b8b89b3bfc41968514593511ea077a98fc9a49f1.sqlite-shm",
+      "sha256": "A2F6DBF06893B04EDE6BEC4CA6856FAC14CC36E373510FE5995A10C842225C3A"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/a24d7697c504036bf700fea0b8b89b3bfc41968514593511ea077a98fc9a49f1.sqlite-wal",
+      "sha256": "5EC6EB9AAB5DA8F19A8F9378E6446B9B913A30D23BC34624F0509D9BB1D2AB51"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/a35bb10e0ffc19782a8a439bab8fa05af2048e929b1d4f523a85eb2368c491a9.sqlite",
+      "sha256": "56E9DFEF9D55824B855A8E7855173376F25C0B1D1252C64800836FEBECE490E7"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/b9134212ec749e4617d797d605eb6895677d0950e443013c25203ede4f21e210.sqlite",
+      "sha256": "A3AE2DD6C9F9F3914E9628E8ACFF1153280530AAA65475E9966CD16C51D2C915"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/b9134212ec749e4617d797d605eb6895677d0950e443013c25203ede4f21e210.sqlite-shm",
+      "sha256": "EC144AB5F8A66ADAAAF4ADA4F4F8FA1A016B2AE69A9072F715601A5A17064077"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/b9134212ec749e4617d797d605eb6895677d0950e443013c25203ede4f21e210.sqlite-wal",
+      "sha256": "F8590C5594028A24BB77009B6F6DE7E8814CEA78FA38E1ADBDB9B212EC84EA91"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/metadata.sqlite",
+      "sha256": "97E8D54F8A7255106F66CF1B213C4A4D7B558D21310B1C2BFEDC3D0D526DDDDA"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/metadata.sqlite-shm",
+      "sha256": "DE836E9C5D4E6C6FB598B9DCC306BA535B674D2FD079B0CEDF441868B54EFF86"
+    },
+    {
+      "archivo": "state/v3/d1/miniflare-D1DatabaseObject/metadata.sqlite-wal",
+      "sha256": "1CAD86890B13D5042512CBEA8E7C2E270F913A254234510306609EEFC9807A30"
+    }
+  ]
+}
